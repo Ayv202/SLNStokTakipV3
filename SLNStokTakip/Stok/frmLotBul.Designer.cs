@@ -129,7 +129,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 23);
+            this.label1.Size = new System.Drawing.Size(159, 23);
             this.label1.TabIndex = 2;
             this.label1.Text = "LOT BUL";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
