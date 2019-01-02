@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnOk = new System.Windows.Forms.Button();
+            this.txtUrunKodu = new System.Windows.Forms.TextBox();
             this.Liste = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UrunKodu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Lot = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Aciklama = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Adet = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtUrunKodu = new System.Windows.Forms.TextBox();
-            this.btnOk = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Liste)).BeginInit();
             this.SuspendLayout();
@@ -44,6 +45,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnOk);
             this.panel1.Controls.Add(this.txtUrunKodu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -51,6 +53,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(651, 72);
             this.panel1.TabIndex = 0;
+            // 
+            // btnOk
+            // 
+            this.btnOk.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnOk.Location = new System.Drawing.Point(576, 0);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(75, 72);
+            this.btnOk.TabIndex = 1;
+            this.btnOk.Text = "OK";
+            this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
+            // 
+            // txtUrunKodu
+            // 
+            this.txtUrunKodu.Location = new System.Drawing.Point(34, 35);
+            this.txtUrunKodu.Name = "txtUrunKodu";
+            this.txtUrunKodu.Size = new System.Drawing.Size(187, 20);
+            this.txtUrunKodu.TabIndex = 0;
+            this.txtUrunKodu.TextChanged += new System.EventHandler(this.txtUrunKodu_TextChanged);
             // 
             // Liste
             // 
@@ -103,24 +124,15 @@
             this.Adet.Name = "Adet";
             this.Adet.Width = 54;
             // 
-            // txtUrunKodu
+            // label1
             // 
-            this.txtUrunKodu.Location = new System.Drawing.Point(62, 35);
-            this.txtUrunKodu.Name = "txtUrunKodu";
-            this.txtUrunKodu.Size = new System.Drawing.Size(187, 20);
-            this.txtUrunKodu.TabIndex = 0;
-            this.txtUrunKodu.TextChanged += new System.EventHandler(this.txtUrunKodu_TextChanged);
-            // 
-            // btnOk
-            // 
-            this.btnOk.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnOk.Location = new System.Drawing.Point(576, 0);
-            this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(75, 72);
-            this.btnOk.TabIndex = 1;
-            this.btnOk.Text = "OK";
-            this.btnOk.UseVisualStyleBackColor = true;
-            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(228, 23);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "LOT BUL";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmLotBul
             // 
@@ -150,5 +162,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Adet;
         private System.Windows.Forms.TextBox txtUrunKodu;
         private System.Windows.Forms.Button btnOk;
+        private System.Windows.Forms.Label label1;
     }
 }
