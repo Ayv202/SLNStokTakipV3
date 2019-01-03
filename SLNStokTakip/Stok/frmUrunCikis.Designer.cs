@@ -40,6 +40,15 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.Liste = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CikisKodu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UrunKodu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LotBul = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Lot = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Aciklama = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StokAdet = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Adet = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nott = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cbCturu = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,15 +59,6 @@
             this.dtpTarih = new System.Windows.Forms.DateTimePicker();
             this.txtCariAdi = new System.Windows.Forms.TextBox();
             this.btnKaydet = new System.Windows.Forms.Button();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CikisKodu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UrunKodu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LotBul = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Lot = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Aciklama = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StokAdet = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Adet = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nott = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -77,9 +77,9 @@
             this.lblGenelNo.BackColor = System.Drawing.Color.Red;
             this.lblGenelNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblGenelNo.ForeColor = System.Drawing.Color.White;
-            this.lblGenelNo.Location = new System.Drawing.Point(436, 10);
+            this.lblGenelNo.Location = new System.Drawing.Point(408, 10);
             this.lblGenelNo.Name = "lblGenelNo";
-            this.lblGenelNo.Size = new System.Drawing.Size(100, 44);
+            this.lblGenelNo.Size = new System.Drawing.Size(128, 44);
             this.lblGenelNo.TabIndex = 4;
             this.lblGenelNo.Text = "**";
             this.lblGenelNo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -234,6 +234,80 @@
             this.Liste.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Liste_CellClick);
             this.Liste.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.Liste_EditingControlShowing);
             // 
+            // Id
+            // 
+            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Visible = false;
+            // 
+            // CikisKodu
+            // 
+            this.CikisKodu.HeaderText = "Çıkış Kodu";
+            this.CikisKodu.Name = "CikisKodu";
+            this.CikisKodu.ReadOnly = true;
+            this.CikisKodu.Visible = false;
+            // 
+            // UrunKodu
+            // 
+            this.UrunKodu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.UrunKodu.HeaderText = "Ürün Kodu";
+            this.UrunKodu.Name = "UrunKodu";
+            this.UrunKodu.Width = 83;
+            // 
+            // LotBul
+            // 
+            this.LotBul.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            this.LotBul.DefaultCellStyle = dataGridViewCellStyle1;
+            this.LotBul.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.LotBul.HeaderText = "Lot Bul";
+            this.LotBul.Name = "LotBul";
+            this.LotBul.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.LotBul.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.LotBul.Width = 65;
+            // 
+            // Lot
+            // 
+            this.Lot.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Lot.HeaderText = "Lot/Seri No";
+            this.Lot.Name = "Lot";
+            this.Lot.ReadOnly = true;
+            this.Lot.Width = 87;
+            // 
+            // Aciklama
+            // 
+            this.Aciklama.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Aciklama.HeaderText = "Açıklama";
+            this.Aciklama.Name = "Aciklama";
+            this.Aciklama.ReadOnly = true;
+            this.Aciklama.Width = 75;
+            // 
+            // StokAdet
+            // 
+            this.StokAdet.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.StokAdet.HeaderText = "Stok Adet";
+            this.StokAdet.Name = "StokAdet";
+            this.StokAdet.ReadOnly = true;
+            this.StokAdet.Width = 79;
+            // 
+            // Adet
+            // 
+            this.Adet.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Adet.HeaderText = "Çıkış Adet";
+            this.Adet.Name = "Adet";
+            this.Adet.Width = 79;
+            // 
+            // Nott
+            // 
+            this.Nott.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Nott.HeaderText = "Not";
+            this.Nott.Name = "Nott";
+            // 
             // cbCturu
             // 
             this.cbCturu.FormattingEnabled = true;
@@ -343,81 +417,6 @@
             this.btnKaydet.Text = "KAYDET";
             this.btnKaydet.UseVisualStyleBackColor = true;
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
-            // 
-            // Id
-            // 
-            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Visible = false;
-            this.Id.Width = 41;
-            // 
-            // CikisKodu
-            // 
-            this.CikisKodu.HeaderText = "Çıkış Kodu";
-            this.CikisKodu.Name = "CikisKodu";
-            this.CikisKodu.ReadOnly = true;
-            this.CikisKodu.Visible = false;
-            // 
-            // UrunKodu
-            // 
-            this.UrunKodu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.UrunKodu.HeaderText = "Ürün Kodu";
-            this.UrunKodu.Name = "UrunKodu";
-            this.UrunKodu.Width = 83;
-            // 
-            // LotBul
-            // 
-            this.LotBul.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            this.LotBul.DefaultCellStyle = dataGridViewCellStyle1;
-            this.LotBul.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.LotBul.HeaderText = "Lot Bul";
-            this.LotBul.Name = "LotBul";
-            this.LotBul.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.LotBul.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.LotBul.Width = 65;
-            // 
-            // Lot
-            // 
-            this.Lot.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Lot.HeaderText = "Lot/Seri No";
-            this.Lot.Name = "Lot";
-            this.Lot.ReadOnly = true;
-            this.Lot.Width = 87;
-            // 
-            // Aciklama
-            // 
-            this.Aciklama.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Aciklama.HeaderText = "Açıklama";
-            this.Aciklama.Name = "Aciklama";
-            this.Aciklama.ReadOnly = true;
-            this.Aciklama.Width = 75;
-            // 
-            // StokAdet
-            // 
-            this.StokAdet.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.StokAdet.HeaderText = "Stok Adet";
-            this.StokAdet.Name = "StokAdet";
-            this.StokAdet.ReadOnly = true;
-            this.StokAdet.Width = 79;
-            // 
-            // Adet
-            // 
-            this.Adet.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Adet.HeaderText = "Çıkış Adet";
-            this.Adet.Name = "Adet";
-            this.Adet.Width = 79;
-            // 
-            // Nott
-            // 
-            this.Nott.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Nott.HeaderText = "Not";
-            this.Nott.Name = "Nott";
             // 
             // frmUrunCikis
             // 

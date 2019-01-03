@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SLNStokTakip.Bilgi;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -80,7 +81,7 @@ namespace SLNStokTakip
 
         private void btnKulGir_Click(object sender, EventArgs e)
         {
-            _f.KulGiris();
+            _f.KulGiris();           
         }
 
         private void btnKulList_Click(object sender, EventArgs e)

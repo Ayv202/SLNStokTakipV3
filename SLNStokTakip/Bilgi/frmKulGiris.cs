@@ -198,7 +198,7 @@ namespace SLNStokTakip.Bilgi
             {
                 Ac(id);
             }
-            AnaSayfa.Aktarma = -1;
+            AnaSayfa.Aktarma = -1;            
         }
 
         private void btnSil_Click(object sender, EventArgs e)

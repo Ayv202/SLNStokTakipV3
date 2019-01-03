@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnGb = new System.Windows.Forms.Button();
             this.btnKapat = new System.Windows.Forms.Button();
             this.btnStokDurum = new System.Windows.Forms.Button();
             this.btn4 = new System.Windows.Forms.Button();
@@ -36,8 +37,6 @@
             this.btn2 = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
             this.gb1 = new System.Windows.Forms.GroupBox();
-            this.pnl4 = new System.Windows.Forms.Panel();
-            this.pnl3 = new System.Windows.Forms.Panel();
             this.pnl2 = new System.Windows.Forms.Panel();
             this.btnKulTipi = new System.Windows.Forms.Button();
             this.btnUrunListe = new System.Windows.Forms.Button();
@@ -51,14 +50,15 @@
             this.btnUrunCikis = new System.Windows.Forms.Button();
             this.btnUrunKayitListe = new System.Windows.Forms.Button();
             this.btnUrunKayit = new System.Windows.Forms.Button();
-            this.btnGb = new System.Windows.Forms.Button();
-            this.btnFaturaKes = new System.Windows.Forms.Button();
+            this.pnl4 = new System.Windows.Forms.Panel();
+            this.pnl3 = new System.Windows.Forms.Panel();
             this.btnFaturaKesListe = new System.Windows.Forms.Button();
+            this.btnFaturaKes = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.gb1.SuspendLayout();
-            this.pnl3.SuspendLayout();
             this.pnl2.SuspendLayout();
             this.pnl1.SuspendLayout();
+            this.pnl3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,6 +76,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(999, 78);
             this.panel1.TabIndex = 2;
+            // 
+            // btnGb
+            // 
+            this.btnGb.Location = new System.Drawing.Point(669, 12);
+            this.btnGb.Name = "btnGb";
+            this.btnGb.Size = new System.Drawing.Size(75, 23);
+            this.btnGb.TabIndex = 3;
+            this.btnGb.Text = "button1";
+            this.btnGb.UseVisualStyleBackColor = true;
+            this.btnGb.Click += new System.EventHandler(this.btnGb_Click);
             // 
             // btnKapat
             // 
@@ -153,10 +163,10 @@
             // gb1
             // 
             this.gb1.BackColor = System.Drawing.Color.Gainsboro;
-            this.gb1.Controls.Add(this.pnl2);
             this.gb1.Controls.Add(this.pnl1);
             this.gb1.Controls.Add(this.pnl4);
             this.gb1.Controls.Add(this.pnl3);
+            this.gb1.Controls.Add(this.pnl2);
             this.gb1.Dock = System.Windows.Forms.DockStyle.Left;
             this.gb1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.gb1.Location = new System.Drawing.Point(0, 78);
@@ -165,28 +175,6 @@
             this.gb1.TabIndex = 3;
             this.gb1.TabStop = false;
             this.gb1.Text = "groupBox1";
-            // 
-            // pnl4
-            // 
-            this.pnl4.BackColor = System.Drawing.Color.Beige;
-            this.pnl4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl4.Location = new System.Drawing.Point(223, 16);
-            this.pnl4.Name = "pnl4";
-            this.pnl4.Size = new System.Drawing.Size(220, 396);
-            this.pnl4.TabIndex = 1;
-            this.pnl4.Visible = false;
-            // 
-            // pnl3
-            // 
-            this.pnl3.BackColor = System.Drawing.Color.LightCyan;
-            this.pnl3.Controls.Add(this.btnFaturaKesListe);
-            this.pnl3.Controls.Add(this.btnFaturaKes);
-            this.pnl3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl3.Location = new System.Drawing.Point(3, 16);
-            this.pnl3.Name = "pnl3";
-            this.pnl3.Size = new System.Drawing.Size(220, 396);
-            this.pnl3.TabIndex = 0;
-            this.pnl3.Visible = false;
             // 
             // pnl2
             // 
@@ -199,7 +187,7 @@
             this.pnl2.Controls.Add(this.btnKulList);
             this.pnl2.Controls.Add(this.btnKulGir);
             this.pnl2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl2.Location = new System.Drawing.Point(663, 16);
+            this.pnl2.Location = new System.Drawing.Point(3, 16);
             this.pnl2.Name = "pnl2";
             this.pnl2.Size = new System.Drawing.Size(220, 396);
             this.pnl2.TabIndex = 0;
@@ -283,7 +271,7 @@
             this.pnl1.Controls.Add(this.btnUrunKayitListe);
             this.pnl1.Controls.Add(this.btnUrunKayit);
             this.pnl1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl1.Location = new System.Drawing.Point(443, 16);
+            this.pnl1.Location = new System.Drawing.Point(663, 16);
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(220, 396);
             this.pnl1.TabIndex = 0;
@@ -332,25 +320,27 @@
             this.btnUrunKayit.UseVisualStyleBackColor = true;
             this.btnUrunKayit.Click += new System.EventHandler(this.btnUrunKayit_Click);
             // 
-            // btnGb
+            // pnl4
             // 
-            this.btnGb.Location = new System.Drawing.Point(669, 12);
-            this.btnGb.Name = "btnGb";
-            this.btnGb.Size = new System.Drawing.Size(75, 23);
-            this.btnGb.TabIndex = 3;
-            this.btnGb.Text = "button1";
-            this.btnGb.UseVisualStyleBackColor = true;
-            this.btnGb.Click += new System.EventHandler(this.btnGb_Click);
+            this.pnl4.BackColor = System.Drawing.Color.Beige;
+            this.pnl4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnl4.Location = new System.Drawing.Point(443, 16);
+            this.pnl4.Name = "pnl4";
+            this.pnl4.Size = new System.Drawing.Size(220, 396);
+            this.pnl4.TabIndex = 1;
+            this.pnl4.Visible = false;
             // 
-            // btnFaturaKes
+            // pnl3
             // 
-            this.btnFaturaKes.Location = new System.Drawing.Point(9, 29);
-            this.btnFaturaKes.Name = "btnFaturaKes";
-            this.btnFaturaKes.Size = new System.Drawing.Size(204, 23);
-            this.btnFaturaKes.TabIndex = 0;
-            this.btnFaturaKes.Text = "Fatura Çıkış";
-            this.btnFaturaKes.UseVisualStyleBackColor = true;
-            this.btnFaturaKes.Click += new System.EventHandler(this.btnFaturaKes_Click);
+            this.pnl3.BackColor = System.Drawing.Color.LightCyan;
+            this.pnl3.Controls.Add(this.btnFaturaKesListe);
+            this.pnl3.Controls.Add(this.btnFaturaKes);
+            this.pnl3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnl3.Location = new System.Drawing.Point(223, 16);
+            this.pnl3.Name = "pnl3";
+            this.pnl3.Size = new System.Drawing.Size(220, 396);
+            this.pnl3.TabIndex = 0;
+            this.pnl3.Visible = false;
             // 
             // btnFaturaKesListe
             // 
@@ -361,6 +351,16 @@
             this.btnFaturaKesListe.Text = "Fatura Çıkış Liste";
             this.btnFaturaKesListe.UseVisualStyleBackColor = true;
             this.btnFaturaKesListe.Click += new System.EventHandler(this.btnFaturaKesListe_Click);
+            // 
+            // btnFaturaKes
+            // 
+            this.btnFaturaKes.Location = new System.Drawing.Point(9, 29);
+            this.btnFaturaKes.Name = "btnFaturaKes";
+            this.btnFaturaKes.Size = new System.Drawing.Size(204, 23);
+            this.btnFaturaKes.TabIndex = 0;
+            this.btnFaturaKes.Text = "Fatura Çıkış";
+            this.btnFaturaKes.UseVisualStyleBackColor = true;
+            this.btnFaturaKes.Click += new System.EventHandler(this.btnFaturaKes_Click);
             // 
             // AnaSayfa
             // 
@@ -377,9 +377,9 @@
             this.Load += new System.EventHandler(this.AnaSayfa_Load);
             this.panel1.ResumeLayout(false);
             this.gb1.ResumeLayout(false);
-            this.pnl3.ResumeLayout(false);
             this.pnl2.ResumeLayout(false);
             this.pnl1.ResumeLayout(false);
+            this.pnl3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
