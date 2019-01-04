@@ -47,6 +47,7 @@
             this.btnFaturaKesListe = new System.Windows.Forms.Button();
             this.btnFaturaKes = new System.Windows.Forms.Button();
             this.pnl2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnKulTipi = new System.Windows.Forms.Button();
             this.btnUrunListe = new System.Windows.Forms.Button();
             this.btnFirmaListesi = new System.Windows.Forms.Button();
@@ -54,7 +55,6 @@
             this.btnFirmaGirisi = new System.Windows.Forms.Button();
             this.btnKulList = new System.Windows.Forms.Button();
             this.btnKulGir = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.gb1.SuspendLayout();
             this.pnl1.SuspendLayout();
@@ -294,6 +294,15 @@
             this.pnl2.TabIndex = 0;
             this.pnl2.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(44, 268);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Uğur ";
+            // 
             // btnKulTipi
             // 
             this.btnKulTipi.Location = new System.Drawing.Point(9, 339);
@@ -363,15 +372,6 @@
             this.btnKulGir.Text = "Kullanıcı Giriş";
             this.btnKulGir.UseVisualStyleBackColor = true;
             this.btnKulGir.Click += new System.EventHandler(this.btnKulGir_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 268);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Uğur Kabasakaloğlu";
             // 
             // AnaSayfa
             // 
