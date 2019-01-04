@@ -18,6 +18,8 @@ namespace SLNStokTakip.Fatura
 
         public bool Secim = false;
         int _secimId = -1;
+        public string UstL;
+
         public frmFaturaKesListe()
         {
             InitializeComponent();
@@ -70,13 +72,26 @@ namespace SLNStokTakip.Fatura
         private void Liste_DoubleClick(object sender, EventArgs e)
         {
             Sec();
-            Secim = true;
-            if (Secim && _secimId > 0)
+            //Secim = true;
+            switch(UstL)
             {
-                AnaSayfa.Aktarma1 = _secimId;
-                Close();
-                _f.FaturaCikis();
-            }
+                case "D":
+                    if (Secim && _secimId > 0)
+                    {
+                        AnaSayfa.Aktarma1 = _secimId;
+                        Close();
+                        //_f.FaturaCikis();
+                    }
+                    break;
+                case "S":
+                    if (Secim && _secimId > 0)
+                    {
+                        AnaSayfa.Aktarma1 = _secimId;
+                        Close();
+                         _f.FaturaCikis();
+                    }
+                    break;
+            }            
         }
     }
 }

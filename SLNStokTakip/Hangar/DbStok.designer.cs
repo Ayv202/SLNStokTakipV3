@@ -212,6 +212,14 @@ namespace SLNStokTakip.Hangar
 				return this.GetTable<vwFaturaKe>();
 			}
 		}
+		
+		public System.Data.Linq.Table<vwUC> vwUCs
+		{
+			get
+			{
+				return this.GetTable<vwUC>();
+			}
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.bgFirma")]
@@ -4237,6 +4245,177 @@ namespace SLNStokTakip.Hangar
 				if ((this._CikisNo != value))
 				{
 					this._CikisNo = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.vwUC")]
+	public partial class vwUC
+	{
+		
+		private int _Id;
+		
+		private System.Nullable<int> _CikisNo;
+		
+		private string _Fadi;
+		
+		private string _UrunKodu;
+		
+		private string _LotSeriNo;
+		
+		private System.Nullable<int> _Adet;
+		
+		private System.Nullable<System.DateTime> _Tarih;
+		
+		private string _Cturu;
+		
+		private string _Aciklama;
+		
+		public vwUC()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", DbType="Int NOT NULL")]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this._Id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CikisNo", DbType="Int")]
+		public System.Nullable<int> CikisNo
+		{
+			get
+			{
+				return this._CikisNo;
+			}
+			set
+			{
+				if ((this._CikisNo != value))
+				{
+					this._CikisNo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Fadi", DbType="NVarChar(250)")]
+		public string Fadi
+		{
+			get
+			{
+				return this._Fadi;
+			}
+			set
+			{
+				if ((this._Fadi != value))
+				{
+					this._Fadi = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UrunKodu", DbType="NVarChar(100)")]
+		public string UrunKodu
+		{
+			get
+			{
+				return this._UrunKodu;
+			}
+			set
+			{
+				if ((this._UrunKodu != value))
+				{
+					this._UrunKodu = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LotSeriNo", DbType="NVarChar(100)")]
+		public string LotSeriNo
+		{
+			get
+			{
+				return this._LotSeriNo;
+			}
+			set
+			{
+				if ((this._LotSeriNo != value))
+				{
+					this._LotSeriNo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Adet", DbType="Int")]
+		public System.Nullable<int> Adet
+		{
+			get
+			{
+				return this._Adet;
+			}
+			set
+			{
+				if ((this._Adet != value))
+				{
+					this._Adet = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Tarih", DbType="Date")]
+		public System.Nullable<System.DateTime> Tarih
+		{
+			get
+			{
+				return this._Tarih;
+			}
+			set
+			{
+				if ((this._Tarih != value))
+				{
+					this._Tarih = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cturu", DbType="NVarChar(50)")]
+		public string Cturu
+		{
+			get
+			{
+				return this._Cturu;
+			}
+			set
+			{
+				if ((this._Cturu != value))
+				{
+					this._Cturu = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Aciklama", DbType="NVarChar(250)")]
+		public string Aciklama
+		{
+			get
+			{
+				return this._Aciklama;
+			}
+			set
+			{
+				if ((this._Aciklama != value))
+				{
+					this._Aciklama = value;
 				}
 			}
 		}

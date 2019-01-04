@@ -76,7 +76,7 @@
         <classShapeMoniker Id="51130e59-4353-430c-8e1f-db6efb23fcac" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.125 : 3.475); (5.875 : 3.475)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.125 : 3.475); (5.875 : 3.475)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DbStokDataContext/bgKulTipi/bgKulTipi_bgKullanicilar" />
       <nodes>
         <classShapeMoniker Id="ce0a8bc4-2cc1-48eb-888e-564a4d38a8b8" />
@@ -96,7 +96,7 @@
         <elementListCompartment Id="70649b3a-93c5-488a-89ae-38b8633188f9" absoluteBounds="6.1400000000000006, 3.085, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(5.5624975 : 1.2); (5.5624975 : 2.91875); (6.125 : 2.91875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5624975 : 1.2); (5.5624975 : 2.91875); (6.125 : 2.91875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DbStokDataContext/bgFirma/bgFirma_stUrunCiki" />
       <nodes>
         <classShapeMoniker Id="51130e59-4353-430c-8e1f-db6efb23fcac" />
@@ -116,7 +116,7 @@
         <elementListCompartment Id="1744cf70-53e5-4590-ab57-4336d591b6b1" absoluteBounds="3.2650000000000006, 2.7100000000000009, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(8.34375 : 1.2); (8.34375 : 2.40625); (8.17708333333333 : 2.40625 : JumpStart); (8.01041666666667 : 2.40625 : JumpEnd); (5.64583083333333 : 2.40625 : JumpStart); (5.47916416666667 : 2.40625 : JumpEnd); (5.25 : 2.40625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(8.34375 : 1.2); (8.34375 : 2.40625); (8.17708333333333 : 2.40625 : JumpStart); (8.01041666666667 : 2.40625 : JumpEnd); (5.25 : 2.40625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DbStokDataContext/stStokDurum/stStokDurum_ftFaturaKesAlt" />
       <nodes>
         <classShapeMoniker Id="234d7a6d-e37c-4194-a272-dfc28d6ce33d" />
@@ -129,14 +129,14 @@
         <elementListCompartment Id="9e21b394-fdff-4964-875a-ad8e83cd4ad8" absoluteBounds="3.265, 2.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(4.25 : 2.075); (4.25 : 2.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(4.25 : 2.075); (4.25 : 2.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DbStokDataContext/ftFaturaKesUst/ftFaturaKesUst_ftFaturaKesAlt" />
       <nodes>
         <classShapeMoniker Id="d2839335-394a-4069-a072-3b7cdd95077a" />
         <classShapeMoniker Id="a9d1e176-1ddd-4e36-8a52-4ad8d63a40a5" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(4.5625 : 1.2); (4.5625 : 1.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(4.5625 : 1.2); (4.5625 : 1.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DbStokDataContext/bgFirma/bgFirma_ftFaturaKesUst" />
       <nodes>
         <classShapeMoniker Id="51130e59-4353-430c-8e1f-db6efb23fcac" />
@@ -147,6 +147,12 @@
       <DataClassMoniker Name="/DbStokDataContext/vwFaturaKe" />
       <nestedChildShapes>
         <elementListCompartment Id="056869b4-2c74-4894-afe7-53704efeae5b" absoluteBounds="6.39, 4.585, 1.9700000000000002, 5.6338297526041661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="80d537e2-dfeb-408f-98ac-8d10c9de6c16" isExpanded="false" absoluteBounds="1.125, 3.875, 2, 0.45">
+      <DataClassMoniker Name="/DbStokDataContext/vwUC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0a199b81-9cc2-4675-b175-f3ff57614876" absoluteBounds="1.1400000000000001, 4.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

@@ -22,6 +22,7 @@ namespace SLNStokTakip.Fatura
         public bool _edit = false;
         int cksNo = -1;
         int fkayNo = -1;
+        
 
         public frmFaturaKes()
         {
@@ -227,11 +228,52 @@ namespace SLNStokTakip.Fatura
             {
                 Ac(id);
             }
-            AnaSayfa.Aktarma = -1;
+            AnaSayfa.Aktarma1 = -1;
         }
 
         void Ac(int id)
         {
+            try
+            {
+                Liste.Rows.Clear();
+                int i = 0;
+                _edit = true;
+                ftFaturaKesUst ust = _db.ftFaturaKesUsts.First(s => s.FKayitNo == id);
+                txtAdres.Text = ust.bgFirma.Fadres;
+                txtAraT.Text = ust.Atoplam.ToString();
+                txtCariAdi.Text = ust.bgFirma.Fadi;
+                txtEvrakNo.Text = ust.CikisNo.ToString().PadLeft(7, '0');
+                txtKdv.Text = ust.KdvToplam.ToString();
+                txtSaat.Text = ust.Saat;
+                txtTcV.Text = ust.bgFirma.Fvno;
+                txtToplamT.Text = ust.Ttutar.ToString();
+                txtVd.Text = ust.bgFirma.Fvd;
+                txtYazi.Text = ust.Yazi;
+                dtpTarih.Text = ust.Tarih.ToString();
+                var srg = (from s in _db.ftFaturaKesAlts
+                           where s.FKayitNo == id
+                           select s).ToList();
+                foreach (var k in srg)
+                {
+                    Liste.Rows.Add();
+                    Liste.Rows[i].Cells[0].Value = k.Id;
+                    Liste.Rows[i].Cells[1].Value = ust.CikisNo;
+                    Liste.Rows[i].Cells[2].Value = k.FKayitNo;
+                    Liste.Rows[i].Cells[3].Value = k.stStokDurum.UrunKodu;
+                    Liste.Rows[i].Cells[4].Value = k.stStokDurum.LotSeriNo;
+                    Liste.Rows[i].Cells[5].Value = k.stStokDurum.Aciklama;
+                    Liste.Rows[i].Cells[6].Value = k.Cadet;
+                    Liste.Rows[i].Cells[7].Value = k.Bfiyat;
+                    Liste.Rows[i].Cells[8].Value = k.Tutar;
+                    i++;
+                }
+                Liste.AllowUserToAddRows = false;
+                Liste.ReadOnly = true;
+            }
+            catch (Exception e)
+            {
+                _m.Hata(e);
+            }
 
         }
 

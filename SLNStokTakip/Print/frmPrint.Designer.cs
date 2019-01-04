@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.crvPrint = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -46,34 +46,35 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.splitContainer1.Panel1.Controls.Add(this.crystalReportViewer1);
+            this.splitContainer1.Panel1.Controls.Add(this.crvPrint);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.SteelBlue;
-            this.splitContainer1.Size = new System.Drawing.Size(800, 450);
-            this.splitContainer1.SplitterDistance = 751;
+            this.splitContainer1.Size = new System.Drawing.Size(700, 450);
+            this.splitContainer1.SplitterDistance = 651;
             this.splitContainer1.TabIndex = 0;
             // 
-            // crystalReportViewer1
+            // crvPrint
             // 
-            this.crystalReportViewer1.ActiveViewIndex = -1;
-            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(747, 446);
-            this.crystalReportViewer1.TabIndex = 0;
+            this.crvPrint.ActiveViewIndex = -1;
+            this.crvPrint.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crvPrint.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crvPrint.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.crvPrint.Location = new System.Drawing.Point(0, 0);
+            this.crvPrint.Name = "crvPrint";
+            this.crvPrint.Size = new System.Drawing.Size(647, 446);
+            this.crvPrint.TabIndex = 0;
             // 
             // frmPrint
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(700, 450);
             this.Controls.Add(this.splitContainer1);
             this.Name = "frmPrint";
             this.Text = "frmPrint";
+            this.Load += new System.EventHandler(this.frmPrint_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
@@ -84,6 +85,6 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crvPrint;
     }
 }

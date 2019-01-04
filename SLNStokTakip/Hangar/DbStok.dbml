@@ -202,4 +202,17 @@
       <Column Name="CikisNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.vwUC" Member="vwUCs">
+    <Type Name="vwUC">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CikisNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fadi" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="UrunKodu" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LotSeriNo" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Adet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Tarih" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Cturu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Aciklama" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
 </Database>

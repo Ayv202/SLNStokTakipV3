@@ -30,17 +30,18 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.btnBul = new System.Windows.Forms.Button();
-            this.btnKapat = new System.Windows.Forms.Button();
             this.Liste = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtAdi = new System.Windows.Forms.TextBox();
             this.Adi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Soyadi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gsm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ktipi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtAdi = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnBul = new System.Windows.Forms.Button();
+            this.btnKapat = new System.Windows.Forms.Button();
+            this.btnYaz = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -75,6 +76,7 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.btnYaz);
             this.splitContainer1.Panel2.Controls.Add(this.txtAdi);
             this.splitContainer1.Panel2.Controls.Add(this.label2);
             this.splitContainer1.Panel2.Controls.Add(this.btnBul);
@@ -82,30 +84,6 @@
             this.splitContainer1.Size = new System.Drawing.Size(683, 420);
             this.splitContainer1.SplitterDistance = 467;
             this.splitContainer1.TabIndex = 2;
-            // 
-            // btnBul
-            // 
-            this.btnBul.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBul.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnBul.Location = new System.Drawing.Point(0, 369);
-            this.btnBul.Name = "btnBul";
-            this.btnBul.Size = new System.Drawing.Size(208, 47);
-            this.btnBul.TabIndex = 3;
-            this.btnBul.Text = "BUL";
-            this.btnBul.UseVisualStyleBackColor = true;
-            this.btnBul.Click += new System.EventHandler(this.btnBul_Click);
-            // 
-            // btnKapat
-            // 
-            this.btnKapat.BackgroundImage = global::SLNStokTakip.Properties.Resources.exit_48;
-            this.btnKapat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnKapat.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnKapat.Location = new System.Drawing.Point(0, 0);
-            this.btnKapat.Name = "btnKapat";
-            this.btnKapat.Size = new System.Drawing.Size(208, 54);
-            this.btnKapat.TabIndex = 2;
-            this.btnKapat.UseVisualStyleBackColor = true;
-            this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
             // 
             // Liste
             // 
@@ -126,23 +104,6 @@
             this.Liste.Size = new System.Drawing.Size(463, 416);
             this.Liste.TabIndex = 0;
             this.Liste.DoubleClick += new System.EventHandler(this.Liste_DoubleClick);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 87);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Adı :";
-            // 
-            // txtAdi
-            // 
-            this.txtAdi.Location = new System.Drawing.Point(51, 84);
-            this.txtAdi.Name = "txtAdi";
-            this.txtAdi.Size = new System.Drawing.Size(144, 20);
-            this.txtAdi.TabIndex = 5;
-            this.txtAdi.TextChanged += new System.EventHandler(this.txtAdi_TextChanged);
             // 
             // Adi
             // 
@@ -191,6 +152,57 @@
             this.Id.ReadOnly = true;
             this.Id.Visible = false;
             // 
+            // txtAdi
+            // 
+            this.txtAdi.Location = new System.Drawing.Point(51, 84);
+            this.txtAdi.Name = "txtAdi";
+            this.txtAdi.Size = new System.Drawing.Size(144, 20);
+            this.txtAdi.TabIndex = 5;
+            this.txtAdi.TextChanged += new System.EventHandler(this.txtAdi_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(17, 87);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Adı :";
+            // 
+            // btnBul
+            // 
+            this.btnBul.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBul.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnBul.Location = new System.Drawing.Point(0, 369);
+            this.btnBul.Name = "btnBul";
+            this.btnBul.Size = new System.Drawing.Size(208, 47);
+            this.btnBul.TabIndex = 3;
+            this.btnBul.Text = "BUL";
+            this.btnBul.UseVisualStyleBackColor = true;
+            this.btnBul.Click += new System.EventHandler(this.btnBul_Click);
+            // 
+            // btnKapat
+            // 
+            this.btnKapat.BackgroundImage = global::SLNStokTakip.Properties.Resources.exit_48;
+            this.btnKapat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnKapat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnKapat.Location = new System.Drawing.Point(0, 0);
+            this.btnKapat.Name = "btnKapat";
+            this.btnKapat.Size = new System.Drawing.Size(208, 54);
+            this.btnKapat.TabIndex = 2;
+            this.btnKapat.UseVisualStyleBackColor = true;
+            this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
+            // 
+            // btnYaz
+            // 
+            this.btnYaz.Location = new System.Drawing.Point(41, 247);
+            this.btnYaz.Name = "btnYaz";
+            this.btnYaz.Size = new System.Drawing.Size(134, 47);
+            this.btnYaz.TabIndex = 6;
+            this.btnYaz.Text = "Yazdır";
+            this.btnYaz.UseVisualStyleBackColor = true;
+            this.btnYaz.Click += new System.EventHandler(this.btnYaz_Click);
+            // 
             // frmKulListe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,5 +238,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Gsm;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ktipi;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.Button btnYaz;
     }
 }

@@ -90,5 +90,16 @@ namespace SLNStokTakip.Bilgi
                 Close();
             }
         }
+
+        private void btnYaz_Click(object sender, EventArgs e)
+        {
+            Yaz();
+        }
+        void Yaz()
+        {
+            Print.frmPrint prn = new Print.frmPrint();
+            prn.HangiListe = "KulListe";
+            prn.Show();
+        }
     }
 }

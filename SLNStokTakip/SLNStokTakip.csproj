@@ -173,10 +173,16 @@
     <Compile Include="Print\frmPrint.Designer.cs">
       <DependentUpon>frmPrint.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print\KulGirisListe.cs">
+    <Compile Include="Print\KulListesi.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>KulGirisListe.rpt</DependentUpon>
+      <DependentUpon>KulListesi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Print\pUrunCikis.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pUrunCikis.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />
@@ -253,9 +259,13 @@
     <EmbeddedResource Include="Print\frmPrint.resx">
       <DependentUpon>frmPrint.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Print\KulGirisListe.rpt">
+    <EmbeddedResource Include="Print\KulListesi.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>KulGirisListe.cs</LastGenOutput>
+      <LastGenOutput>KulListesi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\pUrunCikis.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>pUrunCikis.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

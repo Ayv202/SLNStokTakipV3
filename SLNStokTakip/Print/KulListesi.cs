@@ -16,14 +16,14 @@ namespace SLNStokTakip.Print {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class KulGirisListe : ReportClass {
+    public class KulListesi : ReportClass {
         
-        public KulGirisListe() {
+        public KulListesi() {
         }
         
         public override string ResourceName {
             get {
-                return "KulGirisListe.rpt";
+                return "KulListesi.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace SLNStokTakip.Print {
         
         public override string FullResourceName {
             get {
-                return "SLNStokTakip.Print.KulGirisListe.rpt";
+                return "SLNStokTakip.Print.KulListesi.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace SLNStokTakip.Print {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedKulGirisListe : Component, ICachedReport {
+    public class CachedKulListesi : Component, ICachedReport {
         
-        public CachedKulGirisListe() {
+        public CachedKulListesi() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace SLNStokTakip.Print {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            KulGirisListe rpt = new KulGirisListe();
+            KulListesi rpt = new KulListesi();
             rpt.Site = this.Site;
             return rpt;
         }

@@ -186,15 +186,18 @@ namespace SLNStokTakip.Hangar
             frmFaturaKesListe fkl = new frmFaturaKesListe();
             if (secim)//Eğer true ise ifadesidir.
             {
+                fkl.UstL = "D";
                 fkl.Secim = true;
                 fkl.ShowDialog();
             }
             else
             {
+                fkl.UstL = "S";
                 fkl.MdiParent = Form.ActiveForm;
+                fkl.Secim = true;
                 fkl.Show();
             }
-            return AnaSayfa.Aktarma;
+            return AnaSayfa.Aktarma1;
         }
 
         public int UrunCikisBul(bool secim = false)

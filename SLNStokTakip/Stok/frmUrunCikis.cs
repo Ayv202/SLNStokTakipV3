@@ -299,5 +299,13 @@ namespace SLNStokTakip.Stok
         {
             YeniKaydet();
         }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            Print.frmPrint prn = new Print.frmPrint();
+            AnaSayfa.Aktarma = int.Parse(txtCikisKodu.Text);
+            prn.HangiListe = "UC";
+            prn.Show();
+        }
     }
 }

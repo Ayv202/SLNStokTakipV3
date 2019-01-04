@@ -20,6 +20,7 @@ namespace SLNStokTakip
         public static int Aktarma1 = -1;
 
         public static string LotAktar = "B";
+        public static string stAktar = "";
 
         public AnaSayfa()
         {
