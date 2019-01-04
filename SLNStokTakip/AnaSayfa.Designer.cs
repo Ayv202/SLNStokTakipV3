@@ -37,14 +37,6 @@
             this.btn2 = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
             this.gb1 = new System.Windows.Forms.GroupBox();
-            this.pnl2 = new System.Windows.Forms.Panel();
-            this.btnKulTipi = new System.Windows.Forms.Button();
-            this.btnUrunListe = new System.Windows.Forms.Button();
-            this.btnFirmaListesi = new System.Windows.Forms.Button();
-            this.btnUrunGiris = new System.Windows.Forms.Button();
-            this.btnFirmaGirisi = new System.Windows.Forms.Button();
-            this.btnKulList = new System.Windows.Forms.Button();
-            this.btnKulGir = new System.Windows.Forms.Button();
             this.pnl1 = new System.Windows.Forms.Panel();
             this.btnUrunCikisListe = new System.Windows.Forms.Button();
             this.btnUrunCikis = new System.Windows.Forms.Button();
@@ -54,11 +46,20 @@
             this.pnl3 = new System.Windows.Forms.Panel();
             this.btnFaturaKesListe = new System.Windows.Forms.Button();
             this.btnFaturaKes = new System.Windows.Forms.Button();
+            this.pnl2 = new System.Windows.Forms.Panel();
+            this.btnKulTipi = new System.Windows.Forms.Button();
+            this.btnUrunListe = new System.Windows.Forms.Button();
+            this.btnFirmaListesi = new System.Windows.Forms.Button();
+            this.btnUrunGiris = new System.Windows.Forms.Button();
+            this.btnFirmaGirisi = new System.Windows.Forms.Button();
+            this.btnKulList = new System.Windows.Forms.Button();
+            this.btnKulGir = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.gb1.SuspendLayout();
-            this.pnl2.SuspendLayout();
             this.pnl1.SuspendLayout();
             this.pnl3.SuspendLayout();
+            this.pnl2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -176,93 +177,6 @@
             this.gb1.TabStop = false;
             this.gb1.Text = "groupBox1";
             // 
-            // pnl2
-            // 
-            this.pnl2.BackColor = System.Drawing.Color.Beige;
-            this.pnl2.Controls.Add(this.btnKulTipi);
-            this.pnl2.Controls.Add(this.btnUrunListe);
-            this.pnl2.Controls.Add(this.btnFirmaListesi);
-            this.pnl2.Controls.Add(this.btnUrunGiris);
-            this.pnl2.Controls.Add(this.btnFirmaGirisi);
-            this.pnl2.Controls.Add(this.btnKulList);
-            this.pnl2.Controls.Add(this.btnKulGir);
-            this.pnl2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl2.Location = new System.Drawing.Point(3, 16);
-            this.pnl2.Name = "pnl2";
-            this.pnl2.Size = new System.Drawing.Size(220, 396);
-            this.pnl2.TabIndex = 0;
-            this.pnl2.Visible = false;
-            // 
-            // btnKulTipi
-            // 
-            this.btnKulTipi.Location = new System.Drawing.Point(9, 339);
-            this.btnKulTipi.Name = "btnKulTipi";
-            this.btnKulTipi.Size = new System.Drawing.Size(204, 23);
-            this.btnKulTipi.TabIndex = 0;
-            this.btnKulTipi.Text = "Kullanıcı Tipi";
-            this.btnKulTipi.UseVisualStyleBackColor = true;
-            this.btnKulTipi.Click += new System.EventHandler(this.btnKulTipi_Click);
-            // 
-            // btnUrunListe
-            // 
-            this.btnUrunListe.Location = new System.Drawing.Point(9, 190);
-            this.btnUrunListe.Name = "btnUrunListe";
-            this.btnUrunListe.Size = new System.Drawing.Size(204, 23);
-            this.btnUrunListe.TabIndex = 0;
-            this.btnUrunListe.Text = "Ürün Listesi";
-            this.btnUrunListe.UseVisualStyleBackColor = true;
-            this.btnUrunListe.Click += new System.EventHandler(this.btnUrunListe_Click);
-            // 
-            // btnFirmaListesi
-            // 
-            this.btnFirmaListesi.Location = new System.Drawing.Point(9, 120);
-            this.btnFirmaListesi.Name = "btnFirmaListesi";
-            this.btnFirmaListesi.Size = new System.Drawing.Size(204, 23);
-            this.btnFirmaListesi.TabIndex = 0;
-            this.btnFirmaListesi.Text = "Firma Listesi";
-            this.btnFirmaListesi.UseVisualStyleBackColor = true;
-            this.btnFirmaListesi.Click += new System.EventHandler(this.btnFirmaListesi_Click);
-            // 
-            // btnUrunGiris
-            // 
-            this.btnUrunGiris.Location = new System.Drawing.Point(9, 161);
-            this.btnUrunGiris.Name = "btnUrunGiris";
-            this.btnUrunGiris.Size = new System.Drawing.Size(204, 23);
-            this.btnUrunGiris.TabIndex = 0;
-            this.btnUrunGiris.Text = "Ürün Giriş";
-            this.btnUrunGiris.UseVisualStyleBackColor = true;
-            this.btnUrunGiris.Click += new System.EventHandler(this.btnUrunGiris_Click);
-            // 
-            // btnFirmaGirisi
-            // 
-            this.btnFirmaGirisi.Location = new System.Drawing.Point(9, 91);
-            this.btnFirmaGirisi.Name = "btnFirmaGirisi";
-            this.btnFirmaGirisi.Size = new System.Drawing.Size(204, 23);
-            this.btnFirmaGirisi.TabIndex = 0;
-            this.btnFirmaGirisi.Text = "Firma Giriş";
-            this.btnFirmaGirisi.UseVisualStyleBackColor = true;
-            this.btnFirmaGirisi.Click += new System.EventHandler(this.btnFirmaGirisi_Click);
-            // 
-            // btnKulList
-            // 
-            this.btnKulList.Location = new System.Drawing.Point(9, 52);
-            this.btnKulList.Name = "btnKulList";
-            this.btnKulList.Size = new System.Drawing.Size(204, 23);
-            this.btnKulList.TabIndex = 0;
-            this.btnKulList.Text = "Kullanıcı Listesi";
-            this.btnKulList.UseVisualStyleBackColor = true;
-            this.btnKulList.Click += new System.EventHandler(this.btnKulList_Click);
-            // 
-            // btnKulGir
-            // 
-            this.btnKulGir.Location = new System.Drawing.Point(9, 23);
-            this.btnKulGir.Name = "btnKulGir";
-            this.btnKulGir.Size = new System.Drawing.Size(204, 23);
-            this.btnKulGir.TabIndex = 0;
-            this.btnKulGir.Text = "Kullanıcı Giriş";
-            this.btnKulGir.UseVisualStyleBackColor = true;
-            this.btnKulGir.Click += new System.EventHandler(this.btnKulGir_Click);
-            // 
             // pnl1
             // 
             this.pnl1.BackColor = System.Drawing.Color.BlanchedAlmond;
@@ -362,6 +276,103 @@
             this.btnFaturaKes.UseVisualStyleBackColor = true;
             this.btnFaturaKes.Click += new System.EventHandler(this.btnFaturaKes_Click);
             // 
+            // pnl2
+            // 
+            this.pnl2.BackColor = System.Drawing.Color.Beige;
+            this.pnl2.Controls.Add(this.label1);
+            this.pnl2.Controls.Add(this.btnKulTipi);
+            this.pnl2.Controls.Add(this.btnUrunListe);
+            this.pnl2.Controls.Add(this.btnFirmaListesi);
+            this.pnl2.Controls.Add(this.btnUrunGiris);
+            this.pnl2.Controls.Add(this.btnFirmaGirisi);
+            this.pnl2.Controls.Add(this.btnKulList);
+            this.pnl2.Controls.Add(this.btnKulGir);
+            this.pnl2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnl2.Location = new System.Drawing.Point(3, 16);
+            this.pnl2.Name = "pnl2";
+            this.pnl2.Size = new System.Drawing.Size(220, 396);
+            this.pnl2.TabIndex = 0;
+            this.pnl2.Visible = false;
+            // 
+            // btnKulTipi
+            // 
+            this.btnKulTipi.Location = new System.Drawing.Point(9, 339);
+            this.btnKulTipi.Name = "btnKulTipi";
+            this.btnKulTipi.Size = new System.Drawing.Size(204, 23);
+            this.btnKulTipi.TabIndex = 0;
+            this.btnKulTipi.Text = "Kullanıcı Tipi";
+            this.btnKulTipi.UseVisualStyleBackColor = true;
+            this.btnKulTipi.Click += new System.EventHandler(this.btnKulTipi_Click);
+            // 
+            // btnUrunListe
+            // 
+            this.btnUrunListe.Location = new System.Drawing.Point(9, 190);
+            this.btnUrunListe.Name = "btnUrunListe";
+            this.btnUrunListe.Size = new System.Drawing.Size(204, 23);
+            this.btnUrunListe.TabIndex = 0;
+            this.btnUrunListe.Text = "Ürün Listesi";
+            this.btnUrunListe.UseVisualStyleBackColor = true;
+            this.btnUrunListe.Click += new System.EventHandler(this.btnUrunListe_Click);
+            // 
+            // btnFirmaListesi
+            // 
+            this.btnFirmaListesi.Location = new System.Drawing.Point(9, 120);
+            this.btnFirmaListesi.Name = "btnFirmaListesi";
+            this.btnFirmaListesi.Size = new System.Drawing.Size(204, 23);
+            this.btnFirmaListesi.TabIndex = 0;
+            this.btnFirmaListesi.Text = "Firma Listesi";
+            this.btnFirmaListesi.UseVisualStyleBackColor = true;
+            this.btnFirmaListesi.Click += new System.EventHandler(this.btnFirmaListesi_Click);
+            // 
+            // btnUrunGiris
+            // 
+            this.btnUrunGiris.Location = new System.Drawing.Point(9, 161);
+            this.btnUrunGiris.Name = "btnUrunGiris";
+            this.btnUrunGiris.Size = new System.Drawing.Size(204, 23);
+            this.btnUrunGiris.TabIndex = 0;
+            this.btnUrunGiris.Text = "Ürün Giriş";
+            this.btnUrunGiris.UseVisualStyleBackColor = true;
+            this.btnUrunGiris.Click += new System.EventHandler(this.btnUrunGiris_Click);
+            // 
+            // btnFirmaGirisi
+            // 
+            this.btnFirmaGirisi.Location = new System.Drawing.Point(9, 91);
+            this.btnFirmaGirisi.Name = "btnFirmaGirisi";
+            this.btnFirmaGirisi.Size = new System.Drawing.Size(204, 23);
+            this.btnFirmaGirisi.TabIndex = 0;
+            this.btnFirmaGirisi.Text = "Firma Giriş";
+            this.btnFirmaGirisi.UseVisualStyleBackColor = true;
+            this.btnFirmaGirisi.Click += new System.EventHandler(this.btnFirmaGirisi_Click);
+            // 
+            // btnKulList
+            // 
+            this.btnKulList.Location = new System.Drawing.Point(9, 52);
+            this.btnKulList.Name = "btnKulList";
+            this.btnKulList.Size = new System.Drawing.Size(204, 23);
+            this.btnKulList.TabIndex = 0;
+            this.btnKulList.Text = "Kullanıcı Listesi";
+            this.btnKulList.UseVisualStyleBackColor = true;
+            this.btnKulList.Click += new System.EventHandler(this.btnKulList_Click);
+            // 
+            // btnKulGir
+            // 
+            this.btnKulGir.Location = new System.Drawing.Point(9, 23);
+            this.btnKulGir.Name = "btnKulGir";
+            this.btnKulGir.Size = new System.Drawing.Size(204, 23);
+            this.btnKulGir.TabIndex = 0;
+            this.btnKulGir.Text = "Kullanıcı Giriş";
+            this.btnKulGir.UseVisualStyleBackColor = true;
+            this.btnKulGir.Click += new System.EventHandler(this.btnKulGir_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(44, 268);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Uğur Kabasakaloğlu";
+            // 
             // AnaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -377,9 +388,10 @@
             this.Load += new System.EventHandler(this.AnaSayfa_Load);
             this.panel1.ResumeLayout(false);
             this.gb1.ResumeLayout(false);
-            this.pnl2.ResumeLayout(false);
             this.pnl1.ResumeLayout(false);
             this.pnl3.ResumeLayout(false);
+            this.pnl2.ResumeLayout(false);
+            this.pnl2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -412,5 +424,6 @@
         private System.Windows.Forms.Button btnGb;
         private System.Windows.Forms.Button btnFaturaKesListe;
         private System.Windows.Forms.Button btnFaturaKes;
+        private System.Windows.Forms.Label label1;
     }
 }
